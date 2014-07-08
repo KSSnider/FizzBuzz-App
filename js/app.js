@@ -4,16 +4,16 @@ var count =function (number){
 	/* Creates Count and determines what is devisable and will determine the Fizz Buzzes */
 	for (i=1; i<=number; i++) {
 			if (i%3===0 && i%5===0) {
-				$('.count').append('<p>' + 'Fizzbuzz' + '</p>');
+				$('.count').append('Fizzbuzz' + '<br>');
 			}
 			else if (i%3===0) {
-				$('.count').append('<p>' + 'Fizz' + '</p>');
+				$('.count').append('Fizz' + '<br>');
 			}
 			else if (i%5===0) {
-				$('.count').append('<p>' + 'Buzz' + '</p>');
+				$('.count').append('Buzz' + '<br>');
 			}
 			else {
-				$('.count').append('<p>' + i + '</p>');
+				$('.count').append(i + '<br>');
 			}
 		}
 	};
