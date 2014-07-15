@@ -1,13 +1,14 @@
-var fizz = prompt("Please enter your Fizz number")
-			
-			if(isNaN(fizz)||  fizz<=0 || fizz%1 !==0) {
-		 		alert('Please type in a positive whole number');
-		 	}
-		 
-var buzz = prompt("Please enter your Buzz number")
-	 		if(isNaN(buzz)||  buzz<=0 || buzz%1 !==0) {
-		 		alert('Please type in a positive whole number');
-		 	}
+var fizz = prompt("Please enter your Fizz number");
+
+while(isNaN(fizz) == true ||  fizz<=0 || fizz%1 !==0) { 
+	fizz = prompt('Please type in a positive whole number');
+}			
+		
+var buzz = prompt("Please enter your Buzz number");
+	 		
+while(isNaN(buzz) == true ||  buzz<=0 || buzz%1 !==0) {
+ buzz = prompt('Please type in a positive whole number');
+}			
 
 var count =function (number){
 	/* Creates Count and determines what is devisable and will determine the Fizz Buzzes */
@@ -50,3 +51,10 @@ $(document).on("click", ".reset", function(){
     submissions = 0;
     $('.add-number').val("");
 });
+
+
+
+
+
+
+
